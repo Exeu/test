@@ -1,0 +1,33 @@
+{
+    "name": "kingson-de/test",
+    "description": "Translates data structures to a format that can be used to build messages for transferring data through the wires.",
+    "type": "library",
+    "license": "Apache License",
+    "authors": [
+        {
+            "name": "Martin Ossowski",
+            "email": "martin.ossowski@googlemail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "KingsonDe\\Marshal\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KingsonDe\\Marshal\\": "tests"
+        }
+    },
+    "require": {
+        "php": "~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.4"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-dbg": "phpdbg -qrr vendor/phpunit/phpunit/phpunit",
+        "quicktest": "phpunit --no-coverage"
+    }
+}
